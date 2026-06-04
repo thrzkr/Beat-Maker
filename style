@@ -1,0 +1,54 @@
+/* file: styles.css */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0; padding: 0;
+}
+
+body {
+  background: hsl(270, 0%, 0%);
+}
+
+#drum-machine {
+  display: grid;
+  justify-items: center;
+  grid-gap: 20px;
+  padding: 30px;
+  background: hsl(240, 38%, 10%);
+  border-radius: 1rem;
+  max-width: 96%;
+  margin: 2rem auto;
+}
+
+#pad-bank {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.drum-pad {
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 2.5em;
+  height: 2.5em;
+  background: radial-gradient(hsl(270, 10%, 20%), hsl(240, 38%, 10%) 80%, black);
+  border-radius: 0.4rem;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#display {
+  width: 400px;
+  max-width: 90%;
+  height: 3.6em;
+  padding: 0.4rem;
+  background: hsl(270, 10%, 20%);
+  border-radius: 0.6rem;
+  text-align: center;
+  color: white;
+}
